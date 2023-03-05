@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "840231139594",
+    "project_id": "game-1-32a6d",
+    "storage_bucket": "game-1-32a6d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840231139594:android:6b09d48028fc66fac362f3",
+        "android_client_info": {
+          "package_name": "com.TestFireBaseRemoteConfig.FirebaseRemoteConfigTest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "840231139594-qj1g41c5ekv4s5il4mtrli6a1nk9e3q1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3bga95-KmzdK5P5H0lf3kifC7tv66Vlg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "840231139594-qj1g41c5ekv4s5il4mtrli6a1nk9e3q1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

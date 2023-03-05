@@ -18,6 +18,7 @@
  * 3. This notice may not be removed or altered from any source distribution.
  */
 
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -30,8 +31,21 @@ namespace Addons.Scripts
 {
     public class SampleWebView : MonoBehaviour
     {
+        public static SampleWebView Instance { get; private set; }
+        
         public string url;
         private WebViewObject _webViewObject;
+
+        private void Awake()
+        {
+            if (Instance)
+            {
+                Destroy(gameObject);
+                return;
+            }
+
+            Instance = this;
+        }
 
         IEnumerator Start()
         {

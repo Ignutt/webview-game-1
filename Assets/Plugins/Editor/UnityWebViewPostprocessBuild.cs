@@ -28,6 +28,7 @@ public class UnityWebViewPostprocessBuild
     public void OnPostGenerateGradleAndroidProject(string basePath) {
         var changed = false;
         var androidManifest = new AndroidManifest(GetManifestPath(basePath));
+        changed = (androidManifest.SetUsesCleartextTraffic(true) || changed);
         if (!nofragment) {
             changed = (androidManifest.AddFileProvider(basePath) || changed);
             {
@@ -57,6 +58,7 @@ public class UnityWebViewPostprocessBuild
                 }
             }
             {
+                changed = (androidManifest.SetUsesCleartextTraffic(true) || changed);
                 var path = GetGradlePropertiesPath(basePath);
                 var lines0 = "";
                 var lines = "";

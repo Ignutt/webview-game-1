@@ -5,7 +5,7 @@ using RandomUnity = UnityEngine.Random;
 namespace Common
 {
     [Serializable]
-    public struct Range
+    public struct RangeFloat
     {
         [SerializeField] private float max;
         [SerializeField] private float min;

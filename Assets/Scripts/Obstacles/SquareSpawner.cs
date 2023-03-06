@@ -12,8 +12,8 @@ namespace Obstacles
     public class SquareSpawner : MonoBehaviour
     {
         [Header("Movement properties")] 
-        [SerializeField] private Range randomMovementX;
-        [SerializeField] private Range randomMovementY;
+        [SerializeField] private RangeFloat randomMovementX;
+        [SerializeField] private RangeFloat randomMovementY;
 
         [Header("Spawn properties")] 
         [SerializeField] private float spawnRate = 2;
